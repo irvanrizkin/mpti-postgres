@@ -6,7 +6,7 @@ import { Sequelize } from "sequelize";
 // Connect to the database using the DATABASE_URL environment
 //   variable injected by Railway
 // const pool = new pg.Pool();
-console.log(process.env);
+const sequelize = new Sequelize(process.env.DATABASE_URL);
 
 
 const app = express();
